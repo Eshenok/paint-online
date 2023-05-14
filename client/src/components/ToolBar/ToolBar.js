@@ -19,8 +19,6 @@ const ToolBar = () => {
       <button className={"toolbar__btn toolbar__btn_eraser"} onClick={() => {toolState.setTool(new Eraser())}}></button>
       <button className={"toolbar__btn toolbar__btn_line"} onClick={() => {toolState.setTool(new Line())}}></button>
       <input type={"color"} onChange={e => toolState.setFillColor(e.target.value)} defaultValue={"black"}/>
-      <button className={"toolbar__btn toolbar__btn_undo"} onClick={() => canvasState.undo()}></button>
-      <button className={"toolbar__btn toolbar__btn_redo"} onClick={() => canvasState.redo()}></button>
       <button className={"toolbar__btn toolbar__btn_save"} onClick={download}></button>
     </div>
   );

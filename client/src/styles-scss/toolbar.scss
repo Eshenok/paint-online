@@ -45,19 +45,8 @@
       background-size: cover;
     }
 
-    &_undo {
-      margin-left: auto;
-      background: url("../images/undo.svg") center center no-repeat;
-      background-size: cover;
-    }
-
-    &_redo {
-      background: url("../images/undo.svg") center center no-repeat;
-      background-size: cover;
-      transform: scaleX(-100%);
-    }
-
     &_save {
+      margin-left: auto;
       background: url("../images/save.svg") center center no-repeat;
       background-size: cover;
     }

@@ -50,7 +50,7 @@ const Canvas = observer(() => {
   return (
     <div className={"canvas"}>
       <ModalUserName modal={modal} setModal={setModal}/>
-      <canvas onMouseUp={mouseUpHandler} onMouseDown={() => canvasState.pushToUndo(canvasRef.current.toDataURL())} ref={canvasRef} width={800} height={600}></canvas>
+      <canvas onMouseUp={mouseUpHandler} ref={canvasRef} width={800} height={600}></canvas>
     </div>
   );
 
